@@ -1,0 +1,373 @@
+@import url(normalise.css);
+@import url(typography.css);
+
+/*
+Title:      Waterloo-sunset Main stylesheet
+Author:     Pak-Loon Cheng
+Copyright:  2011, Pak-Loon Cheng.  All rights reserved (please don't re-use without permission).
+*/
+
+/* Main layout
+----------------------------------------------------------------------------------------------------*/
+html {
+overflow-y:scroll;
+text-align:center;
+}
+
+body {
+background-color:#000000;
+color:#ffffff;
+height:100%;
+text-align:center;
+width:100%;
+}
+
+#container {
+margin:0 auto 45px auto;
+position:relative;
+text-align:left;
+width:940px;
+}
+
+#header {
+position:relative;
+}
+
+#branding {
+height:42px;
+margin:90px 0 0 0;
+position:relative;
+width:296px;
+}
+
+#navigation {
+height:auto;
+margin:10px 0;
+position:relative;
+width:100%;
+}
+
+#collection-nav {
+clear:both;
+display:block;
+float:right;
+margin:30px 0 0 0;
+width:100%;
+}
+
+.content {
+min-height:285px;
+height:auto!important;
+height:285px;
+margin:30px 0 0 0;
+position:relative;
+width:100%;
+}
+
+#footer {
+height:auto;
+margin:20px 0 0 0;
+position:relative;
+width:100%;
+}
+
+
+/* Universal classes
+----------------------------------------------------------------------------------------------------*/
+.dotted-divider {
+background:transparent url(../images/dotted-divider.gif) repeat-x 0 0;
+height:1px;
+overflow:hidden;
+width:100%;
+}
+
+strong {
+font-weight:bold;
+}
+
+.mt16 {
+margin-top:16px;
+}
+
+.current-thumb-border {
+border:2px solid #ffffff;
+}
+
+.thumb-border {
+border:2px solid #000000;
+}
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+#navigation ol,
+#collection-nav ol {
+display:inline;
+float:right;
+}
+
+#navigation li,
+#collection-nav li {
+display:inline;
+float:left;
+}
+
+#navigation li a,
+#collection-nav li a {
+display:block;
+margin-left:20px;
+text-transform:uppercase;
+}
+
+#navigation li a {
+font-size:1.3em;
+}
+
+#collection-nav li a {
+font-size:1.2em;
+}
+
+#navigation li.current a,
+#collection-nav li.current a {
+color:#ff9a35;
+}
+
+/* Home Content
+----------------------------------------------------------------------------------------------------*/
+#home p {
+margin-bottom:16px;
+}
+
+/* Contact Content
+----------------------------------------------------------------------------------------------------*/
+#contact ol {
+float:left;
+font-size:1.3em;
+margin:0;
+padding:0;
+width:235px;
+}
+
+#contact ol li {
+margin:0;
+}
+
+#contact-address {
+bottom:30px;
+left:0;
+position:absolute;
+}
+
+/* Collection Content
+----------------------------------------------------------------------------------------------------*/
+.collection-section {
+display:inline;
+float:left;
+margin:0 42px 0 0;
+width:285px;
+}
+
+/* Gallery Content
+----------------------------------------------------------------------------------------------------*/
+#gallery-copy {
+float:left;
+width:310px;
+}
+
+#gallery-content {
+float:left;
+margin:14px 0 0 10px;
+position:relative;
+width:420px;
+}
+
+#slidesContainer {
+height:225px;
+margin:0 auto;
+overflow:auto;
+position:relative;
+width:320px;
+}
+
+.slide {
+height:225px;
+margin:0 auto;
+width:320px;
+}
+
+.control {
+cursor:pointer;
+height:24px;
+margin-top:-12px;
+position:absolute;
+text-indent:-9999px;
+width:23px;
+top:50%;
+}
+
+#previous-button {
+left:0;
+background:transparent url(../images/left-arrow.gif) no-repeat 0 0;
+}
+
+#next-button {
+right:0;
+background:transparent url(../images/right-arrow.gif) no-repeat 0 0;
+}
+
+#zoom-caption {
+font-size:1.2em;
+position:absolute;
+text-align:center;
+top:238px;
+width:100%;
+}
+
+#slide-caption {
+bottom:-15px;
+left:406px;
+position:absolute;
+}
+
+#gallery-thumbnails {
+display:inline;
+float:right;
+margin-top:30px;
+overflow:hidden;
+}
+
+#gallery-thumbnails ul {
+overflow:hidden;
+}
+
+#gallery-thumbnails li {
+display:inline;
+float:left;
+margin:0 0 0 15px;
+}
+
+/* Graffiti Content
+----------------------------------------------------------------------------------------------------*/
+#graffiti #gallery-copy {
+width:200px;
+}
+
+#graffiti #gallery-copy p {
+font-size:1.3em;
+margin-bottom:15px;
+}
+
+#graffiti #thumbnail-rollover {
+float:right;
+margin:32px 0 0 0;
+position:relative;
+width:738px;
+}
+
+.thumbnail-list {
+border:4px solid #ffffff;
+float:right;
+position:relative;
+margin-bottom:15px;
+width:720px;
+}
+
+.thumbnail-list li {
+cursor:pointer;
+display:inline;
+float:left;
+height:56px;
+position:relative;
+width:80px;
+z-index:1;
+}
+
+.thumbnail-list img {
+height:56px;
+left:0;
+position:absolute;
+top:0;
+width:80px;
+}
+
+#graffiti  #zoom-caption {
+clear:both;
+margin-bottom:15px;
+position:static;
+text-align:center;
+width:100%;
+}
+
+/* Assorted Image Section
+----------------------------------------------------------------------------------------------------*/
+#assorted-image-section {
+
+}
+
+#assorted-image-section h3 {
+font-size:1.2em;
+text-transform:uppercase;
+}
+
+/* Footer Content
+----------------------------------------------------------------------------------------------------*/
+#footer li {
+display:inline;
+float:left;
+font-size:1.1em;
+margin-right:10px;
+}
+
+/* Hovers
+----------------------------------------------------------------------------------------------------*/
+a:link,
+a:visited {
+color:#ffffff;
+text-decoration:none;
+}
+
+a:hover {
+color:#ff9a35;
+}
+
+a:active {
+color:#ffffff;
+}
+
+a.invert:link,
+a.invert:visited {
+color:#ff9a35;
+text-decoration:none;
+}
+
+a.invert:hover {
+color:#ffffff;
+}
+
+a.invert:active {
+color:#ff9a35;
+}
+
+/* Override classes
+----------------------------------------------------------------------------------------------------*/
+.no-bottom {
+margin-bottom:0!important;
+}
+
+.no-left {
+margin-left:0!important;
+}
+
+.no-right {
+margin-right:0!important;
+}
+
+/* self-clear floats
+----------------------------------------------------------------------------------------------------*/
+.clearfix:after {
+content:"."; 
+display:block; 
+height:0; 
+clear:both; 
+overflow:hidden;
+visibility:hidden;
+}

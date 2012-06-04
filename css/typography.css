@@ -1,0 +1,59 @@
+body {
+font-family: "VAG Rounded", "Gill Sans", "Gill Sans MT", GillSans, Calibri, Trebuchet, Arial, Helvetica, sans-serif;
+font-size:62.5%;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+blockquote,
+p,
+input,
+small,
+ol {
+line-height: 1.5em;
+}
+
+h2 {
+font-size:1.8em;
+margin:0 0 22px 0;
+text-transform:uppercase;  
+}
+
+h3 {
+font-size:1.3em;
+margin:0 0 10px 0;
+}
+
+h4 { font-size:1.3em; }
+
+p {
+font-size:1.3em;
+}
+
+input { font-size:1.4em; }
+small { font-size:0.8em; }
+
+#gallery-copy h3 {
+margin-bottom:8px;
+}
+
+#gallery-copy h4 {
+color:#ff9a35;
+margin-bottom:0;
+}
+
+#gallery-copy h4,
+#gallery-copy li {
+font-size:1.2em;
+line-height:1.35em;
+}
+
+.collection-section h3{
+font-size: 1.2em;
+text-transform: uppercase;
+}
