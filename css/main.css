@@ -53,7 +53,7 @@ text-align:center;
 
 body {
 background-color:#ffffff;
-color:#000000;
+color:#231F20;
 font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
 font-size:62.5%;
 height:100%;
@@ -61,6 +61,9 @@ text-align:center;
 width:100%;
 }
 
+
+/* Typography
+----------------------------------------------------------------------------------------------------*/
 body,
 h1,
 h2,
@@ -77,7 +80,11 @@ line-height: 1.5em;
 }
 
 h1 {
-    
+color:#888A8C;
+font-size:2.4em;
+font-weight:normal;
+text-align:center;
+text-transform:uppercase;
 }
 
 h2 {
@@ -100,6 +107,36 @@ font-size:1.3em;
 input { font-size:1.4em; }
 small { font-size:0.8em; }
 
+/* Hovers
+----------------------------------------------------------------------------------------------------*/
+a:link,
+a:visited {
+color:#231F20;
+text-decoration:none;
+}
+
+a:hover {
+color:#ff9a35;
+}
+
+a:active {
+color:#231F20;
+}
+
+a.invert:link,
+a.invert:visited {
+color:#ff9a35;
+text-decoration:none;
+}
+
+a.invert:hover {
+color:#231F20;
+}
+
+a.invert:active {
+color:#ff9a35;
+}
+
 #container {
 margin:0 auto 45px auto;
 position:relative;
@@ -108,46 +145,24 @@ width:940px;
 }
 
 #header {
+margin-top:70px;
 position:relative;
-}
-
-#collection-nav {
-clear:both;
-display:block;
-float:right;
-margin:30px 0 0 0;
-width:100%;
 }
 
 .content {
-min-height:285px;
-height:auto!important;
-height:285px;
-margin:30px 0 0 0;
+padding-top:85px;
 position:relative;
 width:100%;
 }
-
-#footer {
-border-top:2px solid #949599;
-clear:both;
-margin:20px 0 0 0;
-overflow:hidden;
-padding-top:25px;
-position:relative;
-width:100%;
-}
-
 
 /* Universal classes
 ----------------------------------------------------------------------------------------------------*/
-
 strong {
 font-weight:bold;
 }
 
-.mt16 {
-margin-top:16px;
+.mb16 {
+margin-bottom:16px;
 }
 
 .current-thumb-border {
@@ -158,51 +173,24 @@ border:2px solid #000000;
 border:2px solid #ffffff;
 }
 
-/* Navigation
+/* Home Content & Contact Page
 ----------------------------------------------------------------------------------------------------*/
-#navigation {
-height:auto;
-margin:10px 0;
-position:relative;
-width:100%;
+#home {
+padding-top:45px;
+text-align:center;
 }
 
-#navigation ol,
-#collection-nav ol {
-display:inline;
-float:right;
+#home img,
+#contact img {
+margin:0 auto 45px auto;
 }
 
-#navigation li,
-#collection-nav li {
-display:inline;
-float:left;
-}
-
-#navigation li a,
-#collection-nav li a {
-display:block;
-margin-left:20px;
-text-transform:uppercase;
-}
-
-#navigation li a {
-font-size:1.3em;
-}
-
-#collection-nav li a {
-font-size:1.2em;
-}
-
-#navigation li.current a,
-#collection-nav li.current a {
-color:#ff9a35;
-}
-
-/* Home Content
-----------------------------------------------------------------------------------------------------*/
 #home p {
 margin-bottom:16px;
+}
+
+#contact {
+
 }
 
 /* Contact Content
@@ -266,6 +254,10 @@ float:left;
 margin:14px 0 0 10px;
 position:relative;
 width:420px;
+}
+
+#gallery-content ul {
+margin-bottom:16px;
 }
 
 #slidesContainer {
@@ -398,41 +390,42 @@ text-transform:uppercase;
 
 /* Footer Content
 ----------------------------------------------------------------------------------------------------*/
-#footer li {
+#footer {
+border-top:1px solid #949599;
+clear:both;
+margin-top:25px;
+overflow:hidden;
+padding-top:15px;
+position:relative;
+width:100%;
+}
+
+/* Navigation
+----------------------------------------------------------------------------------------------------*/
+#navigation {
+overflow:hidden;
+position:relative;
+width:100%;
+}
+
+#navigation li {
 display:inline;
 float:left;
+margin-right:25px;
+}
+
+#navigation li a {
+color:#939598;
 font-size:1.1em;
-margin-right:10px;
+text-transform:uppercase;
 }
 
-/* Hovers
-----------------------------------------------------------------------------------------------------*/
-a:link,
-a:visited {
-color:#000000;
-text-decoration:none;
+#navigation li a:hover {
+color:#231F20;
 }
 
-a:hover {
-color:#ff9a35;
-}
-
-a:active {
-color:#000000;
-}
-
-a.invert:link,
-a.invert:visited {
-color:#ff9a35;
-text-decoration:none;
-}
-
-a.invert:hover {
-color:#000000;
-}
-
-a.invert:active {
-color:#ff9a35;
+#navigation li.current a {
+color:#231F20;
 }
 
 /* Override classes
