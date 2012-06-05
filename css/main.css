@@ -4,7 +4,6 @@ Author:     Pak-Loon Cheng
 Copyright:  2012, Pak-Loon Cheng.  All rights reserved (please don't re-use without permission).
 */
 
-
 /* Reset styles
 ----------------------------------------------------------------------------------------------------*/
 /* Use this to remove browser-specific styling
@@ -112,13 +111,6 @@ width:940px;
 position:relative;
 }
 
-#navigation {
-height:auto;
-margin:10px 0;
-position:relative;
-width:100%;
-}
-
 #collection-nav {
 clear:both;
 display:block;
@@ -137,8 +129,11 @@ width:100%;
 }
 
 #footer {
-height:auto;
+border-top:2px solid #949599;
+clear:both;
 margin:20px 0 0 0;
+overflow:hidden;
+padding-top:25px;
 position:relative;
 width:100%;
 }
@@ -146,12 +141,6 @@ width:100%;
 
 /* Universal classes
 ----------------------------------------------------------------------------------------------------*/
-.dotted-divider {
-background:transparent url(../images/dotted-divider.gif) repeat-x 0 0;
-height:1px;
-overflow:hidden;
-width:100%;
-}
 
 strong {
 font-weight:bold;
@@ -171,6 +160,13 @@ border:2px solid #ffffff;
 
 /* Navigation
 ----------------------------------------------------------------------------------------------------*/
+#navigation {
+height:auto;
+margin:10px 0;
+position:relative;
+width:100%;
+}
+
 #navigation ol,
 #collection-nav ol {
 display:inline;
