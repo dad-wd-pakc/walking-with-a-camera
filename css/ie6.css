@@ -2,6 +2,11 @@
 ----------------------------------------------------------------------------------------------------*/
 
 /* fix clearing for IE6 */
-* html .clearfix {
+.clearfix {
 height: 1%;
+}
+
+.full-width #gallery-thumbnails ul {
+display:inline;
+zoom:1;
 }
