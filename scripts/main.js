@@ -2,16 +2,6 @@ $(document).ready(function () {
     // Colorbox lightbox
     $(".lightboximg").colorbox({ transition: "none" });
 
-    equalHeight($(".slide"));
-
-    $(".slide img").each(function (index, value) {
-        var parentHeight = $(this).parent().height();
-        var heightOffset = parentHeight - $(this).height();
-        $(this).css({
-            "margin-top": heightOffset
-        });
-    });
-
     var currentPosition = 0;
     var currentPlusOne = currentPosition + 1;
     var slideWidth = 940;
@@ -117,6 +107,18 @@ var thumbnailRollover = function () {
     }, function () {
         // hover out
         $(this).fadeTo(400, 1).parent().siblings().find("img").fadeTo(400, 1);
+    });
+};
+
+window.onload = function () {
+    equalHeight($(".slide"));
+
+    $(".slide img").each(function (index, value) {
+        var parentHeight = $(this).parent().height();
+        var heightOffset = parentHeight - $(this).height();
+        $(this).css({
+            "margin-top": heightOffset
+        });
     });
 };
 
