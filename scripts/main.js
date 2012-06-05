@@ -2,6 +2,16 @@ $(document).ready(function () {
     // Colorbox lightbox
     $(".lightboximg").colorbox({ transition: "none" });
 
+    equalHeight($(".slide"));
+
+    $(".slide img").each(function (index, value) {
+        var parentHeight = $(this).parent().height();
+        var heightOffset = parentHeight - $(this).height();
+        $(this).css({
+            "margin-top": heightOffset
+        });
+    });
+
     var currentPosition = 0;
     var currentPlusOne = currentPosition + 1;
     var slideWidth = 940;
@@ -108,6 +118,17 @@ var thumbnailRollover = function () {
         // hover out
         $(this).fadeTo(400, 1).parent().siblings().find("img").fadeTo(400, 1);
     });
+};
+
+var equalHeight = function (group) {
+    var tallest = 0;
+    group.each(function () {
+        var thisHeight = $(this).height();
+        if (thisHeight > tallest) {
+            tallest = thisHeight;
+        }
+    });
+    group.height(tallest);
 };
 
 /*
