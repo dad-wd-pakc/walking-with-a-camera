@@ -187,9 +187,14 @@ padding-top:45px;
 text-align:center;
 }
 
-#home img,
-#contact img {
+#home img {
 margin:0 auto 45px auto;
+}
+
+#contact img {
+display:inline;
+float:left;
+margin:0 0 45px 315px;
 }
 
 #contact ul {
