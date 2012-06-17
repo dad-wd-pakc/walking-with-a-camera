@@ -200,7 +200,7 @@ margin-bottom:25px;
 #contact #contactPrices {
 float:right;
 margin-bottom:200px;
-width:385px;
+width:280px;
 }
 
 #contact #contactDetails {
@@ -275,8 +275,9 @@ height:24px;
 margin-top:-12px;
 position:absolute;
 text-indent:-9999px;
-width:23px;
 top:50%;
+width:23px;
+z-index:99;
 }
 
 #previous-button {
@@ -341,9 +342,10 @@ width:auto;
 margin:0 auto;
 }
 
-.full-width #previous-button,
-.full-width #next-button,
-.full-width #slide-caption {
+#coast #slide-caption,
+#cuba #slide-caption,
+#goa #slide-caption,
+#outAndAbout #slide-caption {
 display:none!important;
 }
 

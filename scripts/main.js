@@ -92,12 +92,7 @@ $(document).ready(function () {
 
     if ($(".thumbnail-list").length) {
         //thumbnailRollover();
-        $(".thumbnail-list li img").hoverpulse({
-            size: 50,
-            speed: 400
-        });
     }
-
 });
 
 var thumbnailRollover = function () {
@@ -132,34 +127,3 @@ var equalHeight = function (group) {
     });
     group.height(tallest);
 };
-
-/*
-var thumbnailRollover = function () {
-    $(".thumbnail-list li img").hover(function () {
-        // hover in
-        $(this)
-        .parent("li").css("z-index", 999).siblings("li").css("z-index", 1);
-        $(this)
-        .stop().animate({
-            height: "112",
-            left: "-40px",
-            top: "-28px",
-            width: "160",
-            opacity: "1"
-        }, "fast").parent().siblings().find("img").fadeTo("slow", 0.25);
-        //$(".thumbnail-list li img").stop().not($(this)).fadeTo("slow", 0.25);
-    }, function () {
-        // hover out
-        $(this)
-        .stop().animate({
-            height: "73",
-            left: "0",
-            top: "0",
-            width: "104",
-            opacity: "1"
-        }, "fast").parent().siblings().find("img").fadeTo("slow", 1);
-        //$(this).stop().fadeTo("slow", 1);
-        //$(".thumbnail-list li img").stop().fadeTo("slow", 1);
-    });
-};
-*/
