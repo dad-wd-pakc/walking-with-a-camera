@@ -281,12 +281,12 @@ z-index:99;
 }
 
 #previous-button {
-left:0;
+left:-40px;
 background:transparent url(../images/left-arrow.gif) no-repeat 0 0;
 }
 
 #next-button {
-right:0;
+right:-40px;
 background:transparent url(../images/right-arrow.gif) no-repeat 0 0;
 }
 
