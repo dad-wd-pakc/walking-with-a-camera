@@ -342,10 +342,7 @@ width:auto;
 margin:0 auto;
 }
 
-#coast #slide-caption,
-#cuba #slide-caption,
-#goa #slide-caption,
-#outAndAbout #slide-caption {
+.full-width #slide-caption {
 display:none!important;
 }
 
@@ -377,6 +374,10 @@ width:100%;
 .full-width #gallery-thumbnails li img {
 height:52px;
 width:71px;
+}
+
+.full-width #gallery-thumbnails p {
+margin:16px 0 0 0;
 }
 
 /* Graffiti Content
