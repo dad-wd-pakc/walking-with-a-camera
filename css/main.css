@@ -140,7 +140,8 @@ color:#231F20;
 }
 
 #container {
-margin:0 auto 45px auto;
+margin:0 auto;
+padding-bottom:45px;
 position:relative;
 text-align:left;
 width:940px;
@@ -354,6 +355,7 @@ text-align:center;
 
 .full-width #gallery-thumbnails ul {
 display:inline-block;
+text-align:center;
 }
 
 .full-width #gallery-thumbnails li {
@@ -454,7 +456,7 @@ width:100%;
 
 /* Navigation
 ----------------------------------------------------------------------------------------------------*/
-#navigation {
+#navigation ol {
 overflow:hidden;
 position:relative;
 width:100%;
