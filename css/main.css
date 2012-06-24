@@ -54,7 +54,7 @@ text-align:center;
 body {
 background-color:#ffffff;
 color:#231F20;
-font-family: "Goudy Old Style", Garamond, "Big Caslon", "Times New Roman", serif;
+font-family:"Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:62.5%;
 height:100%;
 text-align:center;
@@ -80,11 +80,16 @@ line-height: 1.5em;
 }
 
 h1 {
-color:#888A8C;
+color:#231f20;
+font-family:"Blair ITC", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:2.4em;
 font-weight:normal;
 text-align:center;
 text-transform:uppercase;
+}
+
+h1 span {
+color:#888A8C;
 }
 
 h2 {
@@ -387,6 +392,10 @@ width:71px;
 margin:16px 0 0 0;
 }
 
+.full-width #rubbish .slide img {
+border:1px solid #000000;
+}
+
 /* Graffiti Content
 ----------------------------------------------------------------------------------------------------*/
 .thumbnail-list {
@@ -475,7 +484,8 @@ margin-right:25px;
 
 #navigation li a {
 color:#939598;
-font-size:1.1em;
+font-family:"Blair ITC", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-size:0.9em;
 text-transform:uppercase;
 }
 

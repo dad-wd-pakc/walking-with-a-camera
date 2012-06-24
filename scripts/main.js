@@ -1,4 +1,5 @@
 $(document).ready(function () {
+	$("#headerTagLine").delay(1000).fadeIn(1000);
     // Colorbox lightbox
     $(".lightboximg").colorbox({ transition: "none" });
 
@@ -17,7 +18,9 @@ $(document).ready(function () {
         'float': 'left',
         'width': slideWidth
     });
-
+	
+	$(".slide").first().addClass("current-slide");
+	
     // Set #slideInner width equal to total width of all slides
     $('#slideInner').css('width', slideWidth * numberOfSlides);
 
@@ -27,7 +30,7 @@ $(document).ready(function () {
     $('#gallery-content')
 	.prepend('<div class="control" id="previous-button">Previous</div>')
 	.append('<div class="control" id="next-button">Next</div>');
-
+	
     // Hide left arrow control on first load
     manageControls(currentPosition);
 
@@ -40,7 +43,12 @@ $(document).ready(function () {
 
 	    captionTitle = $('.slide-image:eq(' + currentPosition + ')').attr('title');
 
+		$('.slide').removeClass("current-slide");
+		$('.slide:eq(' + currentPosition + ')').addClass("current-slide");
+		
 	    $('#slide-caption').html('<h3>' + captionTitle + '</h3>');
+	    
+	    positionControls($('.slide-image:eq(' + currentPosition + ')'));
 
 	    $('.slide-thumb').children('img').removeClass('current-thumb-border').addClass('thumb-border');
 	    $('.slide-thumb:eq(' + currentPosition + ')').children('img').removeClass('thumb-border').addClass('current-thumb-border');
@@ -63,6 +71,8 @@ $(document).ready(function () {
         captionTitle = $('.slide-image:eq(' + currentPosition + ')').attr('title');
 
         $('#slide-caption').html('<h3>' + captionTitle + '</h3>');
+
+		positionControls($('.slide-image:eq(' + currentPosition + ')'));
 
         // Hide / show controls
         manageControls(currentPosition);
@@ -105,16 +115,30 @@ var thumbnailRollover = function () {
     });
 };
 
+var positionControls = function (currentImage) {
+	var offsetValue = currentImage.height() / 2,
+		parentOffset = currentImage.parent().height() - currentImage.height();
+	
+	$('.control').css({
+		'top': offsetValue + parentOffset + 'px'	
+	});
+	
+	console.log(offsetValue);
+	console.log(parentOffset);
+};
+
 window.onload = function () {
     equalHeight($(".slide"));
-
+	
     $(".slide img").each(function (index, value) {
         var parentHeight = $(this).parent().height();
-        var heightOffset = parentHeight - $(this).height();
+        var heightOffset = parentHeight - $(this).outerHeight();
+        
         $(this).css({
             "margin-top": heightOffset
         });
     });
+    positionControls($(".slide-image").first());
 };
 
 var equalHeight = function (group) {
