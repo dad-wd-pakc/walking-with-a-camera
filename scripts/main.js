@@ -1,5 +1,4 @@
 $(document).ready(function () {
-	$("#headerTagLine").delay(1000).fadeIn(1000);
     // Colorbox lightbox
     $(".lightboximg").colorbox({ transition: "none" });
 
@@ -128,6 +127,15 @@ var positionControls = function (currentImage) {
 };
 
 window.onload = function () {
+	var taglineAnimation = function() {
+		$("#headerTagLine").css({"opacity": 0.1, "color": "#888A8C"}).animate({"opacity": 1}, 2000);	
+	};
+	
+	var timeoutInit = function(){
+		setTimeout(taglineAnimation, 2000);
+	}();
+	
+	
     equalHeight($(".slide"));
 	
     $(".slide img").each(function (index, value) {
