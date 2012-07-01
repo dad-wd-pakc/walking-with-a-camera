@@ -414,12 +414,17 @@ width:104px;
 z-index:1;
 }
 
-.thumbnail-list img {
+.thumbnail-list a {
 height:73px;
+position:relative;
+width:104px;
+}
+
+.thumbnail-list img {
+border:1px solid #000000;
 left:0;
 position:absolute;
 top:0;
-width:104px;
 }
 
 #graffiti  #zoom-caption {
@@ -479,13 +484,17 @@ width:100%;
 #navigation li {
 display:inline;
 float:left;
-margin-right:25px;
+margin-right:20px;
+}
+
+#navigation li.last {
+margin-right:0;
 }
 
 #navigation li a {
 color:#939598;
 font-family:"Blair ITC", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
-font-size:0.9em;
+font-size:1em;
 text-transform:uppercase;
 }
 

@@ -47,7 +47,7 @@ $(document).ready(function () {
 		
 	    $('#slide-caption').html('<h3>' + captionTitle + '</h3>');
 	    
-	    positionControls($('.slide-image:eq(' + currentPosition + ')'));
+	    //positionControls($('.slide-image:eq(' + currentPosition + ')'));
 
 	    $('.slide-thumb').children('img').removeClass('current-thumb-border').addClass('thumb-border');
 	    $('.slide-thumb:eq(' + currentPosition + ')').children('img').removeClass('thumb-border').addClass('current-thumb-border');
@@ -71,7 +71,7 @@ $(document).ready(function () {
 
         $('#slide-caption').html('<h3>' + captionTitle + '</h3>');
 
-		positionControls($('.slide-image:eq(' + currentPosition + ')'));
+		//positionControls($('.slide-image:eq(' + currentPosition + ')'));
 
         // Hide / show controls
         manageControls(currentPosition);
@@ -114,6 +114,7 @@ var thumbnailRollover = function () {
     });
 };
 
+/*
 var positionControls = function (currentImage) {
 	var offsetValue = currentImage.height() / 2,
 		parentOffset = currentImage.parent().height() - currentImage.height();
@@ -121,10 +122,8 @@ var positionControls = function (currentImage) {
 	$('.control').css({
 		'top': offsetValue + parentOffset + 'px'	
 	});
-	
-	console.log(offsetValue);
-	console.log(parentOffset);
 };
+*/
 
 window.onload = function () {
 	var taglineAnimation = function() {
@@ -132,7 +131,7 @@ window.onload = function () {
 	};
 	
 	var timeoutInit = function(){
-		setTimeout(taglineAnimation, 2000);
+		setTimeout(taglineAnimation, 100);
 	}();
 	
 	
@@ -140,13 +139,13 @@ window.onload = function () {
 	
     $(".slide img").each(function (index, value) {
         var parentHeight = $(this).parent().height();
-        var heightOffset = parentHeight - $(this).outerHeight();
+        var heightOffset = (parentHeight - $(this).outerHeight()) / 2;
         
         $(this).css({
             "margin-top": heightOffset
         });
     });
-    positionControls($(".slide-image").first());
+    //positionControls($(".slide-image").first());
 };
 
 var equalHeight = function (group) {
