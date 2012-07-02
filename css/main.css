@@ -81,7 +81,7 @@ line-height: 1.5em;
 
 h1 {
 color:#231f20;
-font-family:"Blair ITC", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:2.4em;
 font-weight:normal;
 text-align:center;
@@ -195,6 +195,15 @@ text-align:center;
 #home img {
 margin:0 auto 45px auto;
 }
+
+/*
+#home p {
+font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-size:8px;
+letter-spacing:1px;
+text-transform:lowercase;
+}
+*/
 
 #contact img {
 display:inline;
@@ -484,7 +493,7 @@ width:100%;
 #navigation li {
 display:inline;
 float:left;
-margin-right:20px;
+margin-right:18px;
 }
 
 #navigation li.last {
@@ -493,7 +502,7 @@ margin-right:0;
 
 #navigation li a {
 color:#939598;
-font-family:"Blair ITC", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:1em;
 text-transform:uppercase;
 }
