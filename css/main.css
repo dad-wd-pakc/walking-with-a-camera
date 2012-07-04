@@ -146,7 +146,7 @@ color:#231F20;
 
 #container {
 margin:0 auto;
-padding-bottom:45px;
+padding:0 40px 45px 40px;
 position:relative;
 text-align:left;
 width:940px;
