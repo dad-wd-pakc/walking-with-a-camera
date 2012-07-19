@@ -64,6 +64,17 @@ width:100%;
 
 /* Typography
 ----------------------------------------------------------------------------------------------------*/
+@font-face {
+    font-family: 'BlairITCRegular';
+    src: url('../fonts/ufonts.com_blair-itc-medium1-webfont.eot');
+    src: url('../fonts/ufonts.com_blair-itc-medium1-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/ufonts.com_blair-itc-medium1-webfont.woff') format('woff'),
+         url('../fonts/ufonts.com_blair-itc-medium1-webfont.ttf') format('truetype'),
+         url('../fonts/ufonts.com_blair-itc-medium1-webfont.svg#BlairITCRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
 body,
 h1,
 h2,
@@ -81,7 +92,7 @@ line-height: 1.5em;
 
 h1 {
 color:#231f20;
-font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family:"BlairITCRegular", "Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:2.4em;
 font-weight:normal;
 text-align:center;
@@ -196,12 +207,14 @@ text-align:center;
 margin:0 auto 45px auto;
 }
 
+/*
 #home p {
 font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:8px;
 letter-spacing:1px;
 text-transform:lowercase;
 }
+*/
 
 #contact img {
 display:inline;
@@ -491,16 +504,17 @@ width:100%;
 #navigation li {
 display:inline;
 float:left;
-margin-right:18px;
+margin-right:15px;
 }
 
 #navigation li.last {
+float:right;
 margin-right:0;
 }
 
 #navigation li a {
 color:#939598;
-font-family:"Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
+font-family:"BlairITCRegular", "Blair ITC", "ITC Blair", "Gill Sans", "Gill Sans MT", Calibri, sans-serif;
 font-size:1em;
 text-transform:uppercase;
 }
